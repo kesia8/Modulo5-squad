@@ -1,4 +1,4 @@
-import db from "../db.js";
+import bd from '../infra/bd.js';
 
 //== CLIENTE
 
@@ -25,6 +25,32 @@ function criaTabelaUSr(){
   });
 }
 
+///== Fornecedores
+
+const FORNECEDORES_SCHEMA = `
+CREATE TABLE IF NOT EXIST "FORNECEDORES" (
+    "COD_FORN" VARCHAR(64),
+    "NOME" VARCHAR(64),
+    "CIDADE" VARCHAR(64),
+    "ESTADO" VARCHAR(64)
+
+); 
+`
+
+const ADD_FORNECEDORES_DATA = `
+INSERT INTO FORNECEDORES (COD_FORN, NOME, CIDADE, ESTADO)
+VALUES
+(222055446881, 'Alan Ferreira', 'Belo Horizonte', 'Minas Gerais')
+(211005119632, 'Gabriel Faria', 'Rio De Janeiro', 'Rio De Janeiro')
+(200544863547, 'Victor Barbosa', 'Campo Grande', 'Mato Grosso Do Sul')
+`
+
+function criaTabelaUSr(){
+    db.run(FORNECEDORES_SCHEMA, (erro) => {
+   if (erro) console.log("Erro ao criar tabela de Fornecedores")
+  });
+}
+
 ///== Funcionarios
 
 const FUNCIONARIOS_SCHEMA = `
@@ -40,7 +66,7 @@ CREATE TABLE IF NOT EXIST "USUARIOS" (
 `
 
 const ADD_FUNCIONARIOS_DATA = `
-INSERT INTO CLIENTE (ID_CLIENTE, NOME, EMAIL, SENHA)
+INSERT INTO CLIENTE (ID_CLIENTE, NOME, CPF, EMAIL, SENHA)
 VALUES
 (1, 'Eugenio oliveira', '15416512326', 'eugenio.oliveira@bol.com.br', 'eugeninhooliveira', 'Gerente Administrativo')
 (2, 'Oliveira Ribeiro', '23457895412', 'oliveira.ribeiro@gmail.com', 'ribeirinho', 'Diretora')
@@ -53,6 +79,6 @@ function criaTabelaUSr(){
   });
 }
 
-db.seriaLize( () => {
+bd.seriaLize( () => {
     criaTabelaUSr();
 });

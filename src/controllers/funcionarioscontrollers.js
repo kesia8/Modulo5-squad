@@ -1,26 +1,26 @@
-const { bdFuncionarios } = require('../infra/bd.js')
-const Funcionarios = require('../models/funcionarios.js')
+import { bdFuncionarios } from '../infra/bd.js'
+import Funcionarios from '../models/funcionarios.js'
 
-class FuncionariosController {
+class funcionariosController {
 
     static rotas(app) {
-        app.get('/funcionarios', FuncionariosController.listar)
-        app.get('/funcionarios/id/:id', ClienteController.buscarPorID)
-        app.post('/funcionarios', ClienteController.inserir)
-        app.put('/funcionarios/id/:id', ClienteController.atualizaCliente)
-        app.delete('/funcionarios/id/:id', ClienteController.deletar)
+        app.get('/funcionarios', funcionariosController.listar)
+        app.get('/funcionarios/id/:id', funcionariosController.buscarPorID)
+        app.post('/funcionarios', funcionariosController.inserir)
+        app.put('/funcionarios/id/:id', funcionariosController.atualizarfuncionarios)
+        app.delete('/funcionarios/id/:id', funcionariosController.deletar)
 
     }
 
     //ROTA GET
     static listar(req, res) {
 
-        res.send(bdfuncionarios)
+        res.send(bdFuncionarios)
     }
 
     //ROTA GET de BUSCAR
     static buscarPorID(req, res) {
-        const funcionarios = bdfuncionarios.find(funcionarios => funcionarios.id === req.params.id)
+        const funcionarios = bdFuncionarios.find(funcionarios => funcionarios.id === req.params.id)
 
         //se for vazio(se não cliente)  
         if (!funcionarios) {
@@ -58,7 +58,7 @@ class FuncionariosController {
         
         
         // res.status(200).send(bdFuncionarios)
-        res.send(bdfuncionarios)
+        res.send(bdFuncionarios)
     }
 
 
@@ -83,4 +83,4 @@ class FuncionariosController {
 }
 
 
-module.exports = FuncionariosController
+export default funcionariosController

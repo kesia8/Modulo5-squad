@@ -1,14 +1,14 @@
-const { bdCliente } = require('../infra/bd.js')
-const Cliente = require('../models/cliente.js')
+import { bdCliente } from '../infra/bd.js'
+import Cliente from '../models/cliente.js'
 
-class ClienteController {
+class clienteController {
 
     static rotas(app) {
-        app.get('/Cliente', ClienteController.listar)
-        app.get('/Cliente/id/:id', ClienteController.buscarPorID)
-        app.post('/Cliente', ClienteController.inserir)
-        app.put('/Cliente/id/:id', ClienteController.atualizaCliente)
-        app.delete('/Cliente/id/:id', ClienteController.deletar)
+        app.get('/Cliente', clienteController.listar)
+        app.get('/Cliente/id/:id', clienteController.buscarPorID)
+        app.post('/Cliente', clienteController.inserir)
+        app.put('/Cliente/id/:id', clienteController.atualizarcliente)
+        app.delete('/Cliente/id/:id', clienteController.deletar)
 
     }
 
@@ -83,4 +83,4 @@ class ClienteController {
 }
 
 
-module.exports = ClienteController
+export default clienteController

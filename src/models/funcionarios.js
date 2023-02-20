@@ -8,4 +8,4 @@ class Funcionarios {
         this.cargo = cargo
     }
 }
-module.exports = Funcionarios
+export default Funcionarios
