@@ -7,6 +7,13 @@
 
 <p> <h1>As 4 funções básicas do CRUD:</p></h1>
 
+
+
+![CRUD](https://user-images.githubusercontent.com/112557591/221029329-cb1870f9-df98-4241-9727-52d8b6ba95da.png)
+
+
+
+
 <p><h3>Create</p></h3>
 A operação de criação de um registro em uma tabela é realizada pelo comando INSERT. 
 <p>Exemplo:</p>
