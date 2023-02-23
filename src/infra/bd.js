@@ -4,7 +4,7 @@ import Funcionarios from '../models/funcionarios.js'
 
 
 const bdCliente =[]
-const bdFornecedor =[]
+const bdFornecedores =[]
 const bdFuncionarios =[]
 
 //cliente//
