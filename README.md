@@ -34,7 +34,7 @@ SELECT IdFuncionario, Nome from FUNCIONARIO;
 <p>UPDATE FUNCIONARIO set Nome = ‘Funcionário A - alterado’ where IdFuncionario = 1;</p>
 
 <p><h3>Delete </p></h3>
-Comando utilizado para a exclusão de registro (s) de uma tabela.
+<p>Comando utilizado para a exclusão de registro (s) de uma tabela.</p>
 <p>Exemplo:</p>
 
 <p>DELETE from FUNCIONARIO where IdFuncionario = 1;</p>
