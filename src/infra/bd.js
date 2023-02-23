@@ -29,17 +29,16 @@ bdFuncionarios.push(funcionarios2)
 const funcionarios3 = new Funcionarios(3, 'Mirtes Faria Lima', '75964812543', 'mirtes_fl@yahoo.com', 'aboboradedoce', 'Gerente Financeiro', new Date())
 bdFuncionarios.push(funcionarios3)
 
-
 //fornecedores//
 
 const fornecedores = new Fornecedores(222055446881, 'Alan Ferreira', 'Belo Horizonte', 'Minas Gerais', new Date())
-bdFornecedor.push(fornecedores)
+bdFornecedores.push(fornecedores)
 
 const fornecedores2 = new Fornecedores(211005119632, 'Gabriel Faria', 'Rio De Janeiro', 'Rio De Janeiro', new Date())
-bdFornecedor.push(fornecedores2)
+bdFornecedores.push(fornecedores2)
 
 const fornecedores3 = new Fornecedores(200544863547, 'Victor Barbosa', 'Campo Grande', 'Mato Grosso Do Sul', new Date())
-bdFornecedor.push(fornecedores3)
+bdFornecedores.push(fornecedores3)
 
 
-export {bdFornecedor, bdFuncionarios, bdCliente}
+export {bdFornecedores, bdFuncionarios, bdCliente}
