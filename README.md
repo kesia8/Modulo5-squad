@@ -3,15 +3,7 @@
 
 # O que é o CRUD
 
-CRUD é a sigla para Create, Read, Update e Delete, que são as principais operações de um sistema de banco de dados relacional.
-
-✔️ Create: Esta operação é usada para criar novos registros em um banco de dados.
-
-✔️ Read: Esta operação é usada para ler ou recuperar os dados de um banco de dados.
-
-✔️ Update: Esta operação é usada para atualizar os dados existentes em um banco de dados.
-
-✔️ Delete: Esta operação é usada para excluir registros de um banco de dados.
+<p>CRUD são as quatro operações básicas do desenvolvimento de uma aplicação, sendo utilizadas em bases de dados relacionais fornecidas aos utilizadores do sistema.</p>
 
 <p> <h1>As 4 funções básicas do CRUD:</p></h1>
 
