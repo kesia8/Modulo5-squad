@@ -37,3 +37,14 @@ SELECT IdFuncionario, Nome from FUNCIONARIO;
 <p>Exemplo:</p>
 
 <p>DELETE from FUNCIONARIO where IdFuncionario = 1;</p>
+
+<p><h1>Entidades</p></h1>
+
+<p><h1>Ferramentas</p></h1>
+
+<p>🖥️ Visual Studio Code </p>
+<p>📈 Node.js</p>
+<p>▶️ Npm </p>
+<p>🚀 Express</p>
+<p>👾 Nodemon>/p>
+<p>🤖 GitHub</p>
