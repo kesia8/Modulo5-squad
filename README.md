@@ -33,15 +33,12 @@ SELECT IdFuncionario, Nome from FUNCIONARIO;
 
 <p>DELETE from FUNCIONARIO where IdFuncionario = 1;</p><br>
 
-<p><h2>🧞‍♂️ Entidades</p></h2>
+<p><h2>🧞‍♂️ Entidades e Atributos</p></h2>
 
-As rotas desenvolvidas para as entidades:
+![Capturar1](https://user-images.githubusercontent.com/112557591/221204540-bff78a47-c7cb-4930-8de1-c09c1065e678.PNG) <br>
+![Capturar](https://user-images.githubusercontent.com/112557591/221204559-af6ae06d-8707-4d49-91fb-1d1212ac9991.PNG) <br>
+![bd](https://user-images.githubusercontent.com/112557591/221204566-bf9b406f-27d3-43ed-8f6a-c90dd45ed5fd.PNG)
 
-<p> Listagem de todos os registros</p>
-<p>Listagem de um único registro com base em um parâmetro de rota</p>
-<p>Inserção de um registro</p>
-<p>Modificação de um registro</p>
-<p>Deleção de um registro</p><br>
 
 
 <p><h2>🛠️ Ferramentas</p></h2>
@@ -62,7 +59,7 @@ As rotas desenvolvidas para as entidades:
 
 ![Captura de tela 2023-02-23 183746](https://user-images.githubusercontent.com/112557591/221044133-4df48607-279e-446e-95b9-6edd654abb7b.jpg)
 
-<h2>🔗⛹Links da Equipe<h2>
+<h1>🔗⛹Links da Equipe</h1>
 
 
 <h2>Kesia:</h2>
