@@ -7,7 +7,7 @@ class fornecedoresController {
         app.get('/Fornecedores', fornecedoresController.listar)
         app.get('/Fornecedores/id', fornecedoresController.buscarPorCod)
         app.post('/Fornecedores', fornecedoresController.inserir)
-        app.put('/Fornecedores/id', fornecedoresController.atualizarFornecedor)
+        app.put('/Fornecedores/id', fornecedoresController.atualizarFornecedores)
         app.delete('/Fornecedores/id', fornecedoresController.deletar)
 
     }
