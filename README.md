@@ -55,6 +55,8 @@ As rotas desenvolvidas para as entidades:
 <br>
 <p><h2>✳️ Iniciando o projeto:</p></h2>
 
+>+ npm start
+
 
 <p><h2>🌀 Testando as rotas:</p></h2>
 
