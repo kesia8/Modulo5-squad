@@ -2,8 +2,14 @@ import { bdFuncionarios } from '../infra/bd.js'
 
 class funcionariosController {
 
+
     static rotas(app) {
         app.get('/funcionarios', funcionariosController.listar)
+        app.get('/funcionarios/id', funcionariosController.buscarPorID)
+        app.post('/funcionarios', funcionariosController.inserir)
+        app.put('/funcionarios/id', funcionariosController.atualizarfuncionarios)
+        app.delete('/funcionarios/id', funcionariosController.deletar)
+
     }
 
     //ROTA GET
