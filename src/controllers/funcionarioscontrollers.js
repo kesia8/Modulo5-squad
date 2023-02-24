@@ -1,4 +1,5 @@
 import { bdFuncionarios } from '../infra/bd.js'
+import Funcionarios from '../models/funcionarios.js'
 
 class funcionariosController {
 
