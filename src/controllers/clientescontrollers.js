@@ -1,5 +1,5 @@
 import { bdCliente } from '../infra/bd.js'
-import Cliente from '../models/cliente.js
+import Cliente from '../models/cliente.js'
 
 class clienteController {
 
@@ -7,7 +7,7 @@ class clienteController {
         app.get('/Cliente', ClienteController.listar)
         app.get('/Cliente/id', ClienteController.buscarPorCod)
         app.post('/Cliente', ClienteController.inserir)
-        app.put('/Cliente/id', ClienteController.atualizarFornecedor)
+        app.put('/Cliente/id', ClienteController.atualizarCliente)
         app.delete('/Cliente/id', ClienteController.deletar)
 
     }
