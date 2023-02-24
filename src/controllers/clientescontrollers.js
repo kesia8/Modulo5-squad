@@ -1,9 +1,10 @@
 import { bdCliente } from '../infra/bd.js'
+import Cliente from '../models/cliente.js
 
 class clienteController {
 
         static rotas(app) {
-        app.get('/Clientes', ClienteController.listar)
+        app.get('/Cliente', ClienteController.listar)
         app.get('/Cliente/id', ClienteController.buscarPorCod)
         app.post('/Cliente', ClienteController.inserir)
         app.put('/Cliente/id', ClienteController.atualizarFornecedor)
