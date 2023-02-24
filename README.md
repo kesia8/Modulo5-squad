@@ -50,7 +50,6 @@ As rotas desenvolvidas para as entidades:
 <p>📈 Node.js</p>
 <p>▶️ Npm </p>
 <p>🚀 Express</p>
-<p>👾 Nodemon>/p>
 <p>🤖 GitHub</p>
 <br>
 <p><h2>✳️ Iniciando o projeto:</p></h2>
@@ -67,9 +66,8 @@ As rotas desenvolvidas para as entidades:
 
 ![Captura de tela 2023-02-23 183746](https://user-images.githubusercontent.com/112557591/221044133-4df48607-279e-446e-95b9-6edd654abb7b.jpg)
 
-<h2>⛹ Sobre a Equipe<h2>
+<h2>🔗⛹Links da Equipe<h2>
 
-<p>🔗 Links:</p>
 
 <h2>Kesia:</h2>
 <p> Linkdin - https://www.linkedin.com/in/kesiaribeiro/ </p>
