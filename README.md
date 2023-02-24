@@ -58,10 +58,6 @@ As rotas desenvolvidas para as entidades:
 >+ npm install express
 >+ npm start
 
-
-<p><h2>🌀 Testando as rotas:</p></h2>
-
-
 <p><h2>👥 Projeto desenvolvido pela squad composta por:</p></h2>
 
 ![Captura de tela 2023-02-23 183746](https://user-images.githubusercontent.com/112557591/221044133-4df48607-279e-446e-95b9-6edd654abb7b.jpg)
