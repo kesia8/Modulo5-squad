@@ -55,6 +55,8 @@ As rotas desenvolvidas para as entidades:
 <br>
 <p><h2>✳️ Iniciando o projeto:</p></h2>
 
+>+npm install
+>+npm install express
 >+ npm start
 
 
