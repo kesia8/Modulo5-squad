@@ -1,4 +1,5 @@
 import { bdFornecedores } from '../infra/bd.js'
+import Fornecedores from '../models/fornecedores.js'
 
 class fornecedoresController {
 
@@ -18,10 +19,10 @@ class fornecedoresController {
     }
 //ROTA GET de BUSCAR
     static buscarPorCod(req, res) {
-        const Fornecedor = bdFornecedor.find(Fornecedor => Fornecedor.cod === req.params.cod)
+        const Fornecedor = bdFornecedores.find(Fornecedores => Fornecedores.cod === req.params.cod)
 
         //se for vazio(se não cliente)  
-        if (!Fornecedor) {
+        if (!Fornecedores) {
             res.send("Fornecedor não encontrado")
             return
         }
@@ -31,49 +32,49 @@ class fornecedoresController {
 
     //ROTA POST
     static inserir(req, res) {
-        const Fornecedor = new Fornecedor(req.body.cod, req.body.nome, req.body.cidade, req.body.estado )
-        bdFornecedor.push(Fornecedor)
-        res.send(bdFornecedor)
+        const Fornecedores = new Fornecedores(req.body.cod, req.body.nome, req.body.cidade, req.body.estado )
+        bdFornecedores.push(Fornecedores)
+        res.send(bdFornecedores)
         console.log(req.body)
     }
 
 
     //ROTA PUT
 
-    static atualizarFornecedor(req, res) {
-        const Fornecedor = bdFornecedor.find(Fornecedor => Fornecedor.cod === req.params.cod)
+    static atualizarFornecedores(req, res) {
+        const Fornecedores = bdFornecedores.find(Fornecedores => Fornecedores.cod === req.params.cod)
 
-        if (!Fornecedor) {
+        if (!Fornecedores) {
             res.send('Fornecedor não encontrado')
             // res.status(404).send('Fornecedor não encontrado')
             return 
         }
 
-        Fornecedor.cod = req.body.cod
-        Fornecedor.nome = req.body.nome
-        Fornecedor.cidade = req.body.cidade
-        Fornecedor.estado = req.body.estado
+        Fornecedores.cod = req.body.cod
+        Fornecedores.nome = req.body.nome
+        Fornecedores.cidade = req.body.cidade
+        Fornecedores.estado = req.body.estado
         
         
         // res.status(200).send(bdFornecedor)
-        res.send(bdFornecedor)
+        res.send(bdFornecedores)
     }
 
 
 
     // ROTA DELETE
     static deletar(req, res) {
-        const cliente = bdFornecedor.find(Fornecedor => Fornecedor.cod === req.params.cod)
+        const cliente = bdFornecedores.find(Fornecedores => Fornecedores.cod === req.params.cod)
 
-        if (!Fornecedor) {
+        if (!Fornecedores) {
             res.send("Fornecedor não encontrado")
             return
         }
 
-        const index = bdFornecedor.indexOf(Fornecedor);
-        bdFornecedor.splice(index, 1);
+        const index = bdFornecedores.indexOf(Fornecedores);
+        bdFornecedores.splice(index, 1);
         res.send({
-            "Mensagem": `O fornecedor do código ${Fornecedor.cod} foi deletado!`
+            "Mensagem": `O fornecedor do código ${Fornecedores.cod} foi deletado!`
         });
     }
 
@@ -81,4 +82,4 @@ class fornecedoresController {
 }
 
 
-export default fornecedorController
+export default fornecedoresController
